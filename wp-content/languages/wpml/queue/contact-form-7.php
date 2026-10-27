@@ -1,0 +1,2 @@
+<?php
+return ['items'=>['Contact Form 7\\4block title'=>['urls'=>[],'names'=>[],'cmp'=>['WordPress',3]],'URL'=>['urls'=>[],'names'=>[],'cmp'=>['WordPress',3]],'Error:'=>['urls'=>[],'names'=>[],'cmp'=>['WordPress',3]],'Sender&#8217;s message was sent successfully'=>['urls'=>[],'names'=>[],'cmp'=>['WordPress',3]],'Sender&#8217;s message failed to send'=>['urls'=>[],'names'=>[],'cmp'=>['WordPress',3]],'email'=>['urls'=>[],'names'=>[],'cmp'=>['contact-form-7',1]]]];

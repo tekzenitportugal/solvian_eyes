@@ -1,0 +1,24 @@
+﻿# Secrets / credentials
+wp-config.php
+dbtest.php
+test.php
+
+# Database dump and backups
+*.sql
+.htaccess.bk
+
+# Logs, caches, upgrades
+*.log
+wp-content/debug.log
+wp-content/upgrade/
+wp-content/litespeed/
+wp-content/wp-content/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Large installers
+*.exe

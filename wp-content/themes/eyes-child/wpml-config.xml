@@ -1,0 +1,25 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">concurso</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">regiao</taxonomy>
+		<taxonomy translate="1">enquadramento_pme</taxonomy>
+		<taxonomy translate="1">cae_activity</taxonomy>
+		<taxonomy translate="1">financing_type</taxonomy>
+		<taxonomy translate="1">sector_activity</taxonomy>
+		<taxonomy translate="1">concurso_audience</taxonomy>
+		<taxonomy translate="1">concursos_publicos</taxonomy>
+		<taxonomy translate="1">beneficios_fiscais</taxonomy>
+	</taxonomies>
+	<custom-fields>
+		<custom-field action="translate">report_page_title</custom-field>
+		<custom-field action="translate">report_page_lead</custom-field>
+		<custom-field action="translate">report_title_label</custom-field>
+		<custom-field action="translate">report_title_placeholder</custom-field>
+		<custom-field action="translate">report_description_label</custom-field>
+		<custom-field action="translate">report_description_placeholder</custom-field>
+		<custom-field action="translate">report_submit_label</custom-field>
+		<custom-field action="translate">report_success_message</custom-field>
+	</custom-fields>
+</wpml-config>

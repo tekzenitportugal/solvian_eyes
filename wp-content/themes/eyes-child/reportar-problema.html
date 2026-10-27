@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solvian Eyes — Reportar um problema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner site-layout">
+        <div class="site-header__brand">
+          <a href="index.html" aria-label="Solvian Eyes — Início">
+            <img
+              class="site-header__logo"
+              src="assets/images/logo-nav.png"
+              width="139"
+              height="42"
+              alt=""
+            />
+          </a>
+          <span class="site-header__divider site-header__nav-desktop" aria-hidden="true"></span>
+          <nav class="site-header__nav-desktop" aria-label="Principal">
+            <a class="btn btn--nav-text" href="concursos.html">Consultar Oportunidades</a>
+            <a class="btn btn--nav-text" href="index.html#funcionalidades">Como funciona</a>
+            <a class="btn btn--nav-sm" href="index.html#sobre">Sobre Nós</a>
+          </nav>
+        </div>
+
+        <button
+          type="button"
+          class="site-header__burger"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          id="menu-open"
+        >
+          <span></span><span></span><span></span>
+          <span class="visually-hidden">Abrir menu</span>
+        </button>
+
+        <div class="site-header__actions">
+          <div class="lang-toggle" role="group" aria-label="Idioma">
+            <button type="button" class="is-active">PT</button>
+            <button type="button" class="is-inactive">EN</button>
+            <button type="button" class="is-inactive">ES</button>
+          </div>
+          <a class="btn btn--primary site-header__nav-desktop" href="login.html">Entrar</a>
+          <a class="btn btn--outline-primary site-header__nav-desktop" href="registo.html">Registo Gratuito</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-header__drawer" id="mobile-drawer" hidden aria-hidden="true">
+      <div class="site-header__drawer-panel">
+        <nav aria-label="Mobile">
+          <a class="btn btn--nav-text" href="concursos.html">Consultar Oportunidades</a>
+          <a class="btn btn--nav-text" href="index.html#funcionalidades">Como funciona</a>
+          <a class="btn btn--nav-text" href="index.html#sobre">Sobre Nós</a>
+          <a class="btn btn--primary" href="login.html">Entrar</a>
+          <a class="btn btn--outline-primary" href="registo.html">Registo Gratuito</a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="report-page">
+      <div class="site-layout site-layout--top-24">
+        <section class="report-panel" aria-labelledby="report-title">
+          <h1 class="report-panel__title" id="report-title">Reportar um problema</h1>
+          <p class="report-panel__lead">
+            Se detetou um erro, falha técnica ou qualquer comportamento inesperado na plataforma, descreva-nos o
+            ocorrido para que a nossa equipa possa resolver a situação o mais rapidamente possível.
+          </p>
+
+          <form class="report-panel__form" action="#" method="post">
+            <div class="report-panel__fields">
+              <div class="form-field">
+                <label class="form-field__label" for="report-title-input">Título do problema*</label>
+                <input
+                  class="form-field__control"
+                  id="report-title-input"
+                  name="title"
+                  type="text"
+                  placeholder="Assunto do problema"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-field__label" for="report-desc">Descrição*</label>
+                <textarea
+                  class="form-field__control report-panel__textarea"
+                  id="report-desc"
+                  name="description"
+                  rows="8"
+                  placeholder="Descreva o seu problema"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary report-panel__submit">Submeter</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__top site-layout">
+        <div>
+          <img
+            class="site-footer__logo"
+            src="assets/images/footer-logo.png"
+            width="140"
+            height="112"
+            alt="Solvian Technology"
+          />
+        </div>
+        <div class="site-footer__contact-row">
+          <div class="site-footer__contact-block site-footer__contact-block--contacts">
+            <div class="site-footer__line">
+              <img src="assets/images/icon-phone.svg" width="16" height="16" alt="" />
+              <span>226 160 175</span>
+            </div>
+            <div class="site-footer__line">
+              <img src="assets/images/icon-mail.svg" width="16" height="16" alt="" />
+              <span>geral@solvian.pt</span>
+            </div>
+          </div>
+          <div class="site-footer__address-cluster">
+            <img
+              class="site-footer__address-pin"
+              src="assets/images/icon-map-pin.svg"
+              width="16"
+              height="16"
+              alt=""
+            />
+            <div class="site-footer__addresses">
+              <div class="site-footer__address-unit">
+                <p class="site-footer__label-sm">Sede</p>
+                <p class="site-footer__address-text">
+                  Rua Júlio Dinis, 585 4.º Esq. Tras.<br />4050 - 325 Porto · Portugal
+                </p>
+              </div>
+              <div class="site-footer__address-unit">
+                <p class="site-footer__label-sm">Espaço de cowork</p>
+                <p class="site-footer__address-text">
+                  Rua de Álvaro Gomes, 106A, 4150-063 Porto · Portugal
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="site-footer__rule site-layout" aria-hidden="true" />
+
+      <div class="site-footer__mid site-layout">
+        <div class="site-footer__badges">
+          <div class="site-footer__funding-logos" aria-hidden="true"></div>
+          <div class="site-footer__brand-logos">
+            <img
+              class="site-footer__selo"
+              src="assets/images/footer-selo.png"
+              width="72"
+              height="72"
+              alt="Selo Top 5%"
+            />
+            <img
+              class="site-footer__logo-group"
+              src="assets/images/footer-logo-group.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="site-footer__mid-aside">
+          <nav class="site-footer__links" aria-label="Solvian Eyes">
+            <p class="site-footer__links-title">Solvian Eyes</p>
+            <a href="concursos.html">Consultar Concursos</a>
+            <a href="reportar-problema.html">Reportar Problema</a>
+            <a href="legal.html#termos">Termos e Condições</a>
+            <a href="legal.html#privacidade">Política de Privacidade</a>
+            <a href="legal.html#dados">Proteção de Dados</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom site-layout">
+        <p>©2025 Solvian. All Rights Reserved.</p>
+        <div class="site-footer__credit">
+          <span>Design and Developed by</span>
+          <img
+            class="site-footer__credit-logo"
+            src="assets/images/logo-tekzenit.png"
+            width="59"
+            height="11"
+            alt="tekzenit"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

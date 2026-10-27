@@ -1,0 +1,4 @@
+PMPro restricted-files protection test marker.
+This file is intentional. PMPro uses it to verify the directory is
+correctly protected from public access. It is safe to delete; PMPro
+will recreate it on the next daily run.

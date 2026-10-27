@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solvian Eyes — Manutenção</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&family=DM+Sans:opsz,wght@9..40,400&display=swap");
+
+    :root {
+      --accent: #68eaea;
+      --muted: #bbbbbb;
+      --white: #ffffff;
+      --frame-w: 1280px;
+      --frame-h: 658.767578125px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      min-height: 100%;
+      height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      min-height: 100dvh;
+      background: #020809;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Albert Sans", system-ui, sans-serif;
+    }
+
+    /* Artboard matches Figma frame “Group 30” 0:9 */
+    .stage {
+      position: relative;
+      width: var(--frame-w);
+      height: var(--frame-h);
+      overflow: hidden;
+      background-image: linear-gradient(27.2331611343254deg, rgb(4, 10, 10) 0%, rgb(6, 43, 68) 100%);
+      flex-shrink: 0;
+    }
+
+    .abs {
+      position: absolute;
+    }
+
+    .scaler {
+      width: 1280px;
+      height: 658.767578125px;
+      flex-shrink: 0;
+      transform-origin: center center;
+    }
+
+    /* SG_ID_CORES_RGB-08 1 — 0:11 */
+    .brand-logo {
+      left: 58px;
+      top: 100px;
+      width: 140px;
+      height: 111.76757049560547px;
+    }
+
+    .brand-logo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    /* Partner logos (logos.png) — left aligned with artboard gutter */
+    .partners-wrap {
+      left: 58px;
+      right: auto;
+      width: auto;
+      max-width: calc(100% - 116px);
+      top: calc(361.767578125px + 112px);
+      min-height: 40px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .partners-img {
+      display: block;
+      height: 40px;
+      width: auto;
+      max-width: 459.1254577636719px;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    /* Contact — Frame 231 0:173 */
+    .contact {
+      left: 919px;
+      top: 452.767578125px;
+      width: 281px;
+      height: 61px;
+    }
+
+    .contact-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+      align-items: flex-start;
+      width: 281px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .contact-row .icon-16 {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      display: block;
+      object-fit: contain;
+    }
+
+    .contact-row span {
+      font-size: 16px;
+      line-height: 1.4;
+      font-weight: 400;
+      color: var(--white);
+      white-space: nowrap;
+    }
+
+    /* Copyright — 0:201 */
+    .copyright {
+      left: 58px;
+      top: 588.767578125px;
+      font-family: "DM Sans", system-ui, sans-serif;
+      font-optical-sizing: none;
+      font-size: 14px;
+      line-height: 1.4;
+      color: var(--muted);
+      white-space: nowrap;
+      font-variation-settings: "opsz" 9;
+    }
+
+    /* Design credit — Frame 213 0:202 */
+    .credit {
+      left: 919px;
+      top: 588.767578125px;
+      width: 229px;
+      height: 20px;
+      position: absolute;
+    }
+
+    .credit-text {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-family: "DM Sans", system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.4;
+      color: var(--muted);
+      white-space: nowrap;
+      font-variation-settings: "opsz" 9;
+    }
+
+    .credit-logo {
+      position: absolute;
+      left: 170px;
+      top: 4px;
+      width: 59px;
+      height: 10.95714282989502px;
+    }
+
+    .credit-logo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Maintenance copy — metadata 0:215, 0:216 */
+    .msg-pt {
+      left: 919px;
+      top: 128px;
+      width: 236px;
+      color: var(--white);
+      font-size: 18px;
+      line-height: 0;
+      letter-spacing: -0.36px;
+      font-feature-settings: "ss04" 1;
+    }
+
+    .msg-pt p {
+      line-height: 1.3;
+      margin: 0 0 0 0;
+      font-size: 18px;
+    }
+
+    .msg-pt p + p {
+      margin-top: 0;
+    }
+
+    .msg-pt .bold {
+      font-weight: 700;
+      letter-spacing: -0.36px;
+      font-feature-settings: "ss04" 1;
+    }
+
+    .msg-en {
+      left: 919px;
+      top: 237px;
+      width: 295px;
+      color: var(--white);
+      font-size: 18px;
+      line-height: 0;
+      letter-spacing: -0.36px;
+      font-feature-settings: "ss04" 1;
+    }
+
+    .msg-en p {
+      line-height: 1.3;
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .msg-en .bold {
+      font-weight: 700;
+      letter-spacing: -0.36px;
+      font-feature-settings: "ss04" 1;
+    }
+
+    .spacer-line {
+      line-height: 1.3;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="scaler">
+    <main class="stage" data-node-id="0:9">
+      <!-- Brand -->
+      <div class="abs brand-logo" data-node-id="0:11">
+        <img alt="Solvian" src="logos.png" />
+      </div>
+
+      <!-- Portuguese -->
+      <div class="abs msg-pt" data-node-id="0:215">
+        <p>Solvian Eyes</p>
+        <p><span>encontra-se em </span><span class="bold">manutenção.</span></p>
+        <p>Estaremos de volta em breve.</p>
+        <p class="spacer-line" aria-hidden="true">&nbsp;</p>
+      </div>
+
+      <!-- English -->
+      <div class="abs msg-en" data-node-id="0:216">
+        <p>Solvian Eyes</p>
+        <p>
+          <span>is currently </span><span class="bold">undergoing maintenance</span><span>.</span>
+        </p>
+        <p>We’ll be back online shortly.</p>
+        <p class="spacer-line" aria-hidden="true">&nbsp;</p>
+      </div>
+
+      <!-- Partner logos (logos.png) -->
+      <div class="abs partners-wrap" data-node-id="0:14">
+        <img class="partners-img" src="footer-logo-group.png" alt="PRR, República Portuguesa, Financiamento União Europeia" width="459" height="40" />
+      </div>
+
+      <!-- Contact -->
+      <div class="abs contact" data-node-id="0:173">
+        <div class="contact-inner" data-node-id="0:174">
+          <div class="contact-row" data-node-id="0:175">
+            <img class="icon-16" alt="" src="icon-phone.svg" width="16" height="16" />
+            <span>+351 226 160 175</span>
+          </div>
+          <div class="contact-row" data-node-id="0:179">
+            <img class="icon-16" alt="" src="icon-mail.svg" width="16" height="16" />
+            <span>geral@solvian.pt</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="abs copyright" data-node-id="0:201">©2025 Solvian. All Rights Reserved.</p>
+
+      <div class="credit" data-node-id="0:202">
+        <span class="credit-text" data-node-id="0:203">Design and Developed by</span>
+        <div class="credit-logo" data-node-id="0:204">
+          <img alt="tekzenit" src="logo-tekzenit.png" />
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var scaler = document.querySelector(".scaler");
+      function fit() {
+        var vw = window.innerWidth;
+        var s = Math.min(1, vw / 1280);
+        scaler.style.transform = "scale(" + s + ")";
+      }
+      fit();
+      window.addEventListener("resize", fit);
+    })();
+  </script>
+</body>
+</html>

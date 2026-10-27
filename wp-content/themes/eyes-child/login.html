@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solvian Eyes — Entrar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="auth-page">
+    <div class="auth-card">
+      <div class="auth-card__visual" aria-hidden="true"></div>
+      <div class="auth-card__body">
+        <a class="auth-card__close" href="index.html" aria-label="Fechar">×</a>
+        <form class="auth-card__form" action="#" method="post">
+          <div class="auth-card__head">
+            <h1 class="auth-card__title">Faça login</h1>
+            <p class="auth-card__lead">
+              Entre na sua conta para consultar e acompanhar as suas oportunidades de financiamento.
+            </p>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="login-user">Username ou Email</label>
+            <input
+              class="form-field__control"
+              id="login-user"
+              name="user"
+              type="text"
+              placeholder="Insira o seu username ou email"
+              autocomplete="username"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="login-password">Password</label>
+            <div class="form-field__control-wrap">
+              <input
+                class="form-field__control"
+                id="login-password"
+                name="password"
+                type="password"
+                placeholder="Insira a sua password"
+                autocomplete="current-password"
+                required
+              />
+              <button type="button" class="password-toggle" aria-label="Mostrar password"></button>
+            </div>
+          </div>
+
+          <div class="auth-card__row">
+            <label class="form-check">
+              <input type="checkbox" name="remember" />
+              <span class="form-check__box" aria-hidden="true"></span>
+              <span>Manter sessão iniciada</span>
+            </label>
+            <a class="auth-card__recover" href="#">Recuperar palavra-passe</a>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width: 100%">Entrar</button>
+        </form>
+
+        <hr class="form-divider" />
+
+        <div class="auth-card__signup">
+          <h2 class="auth-card__signup-title">Crie uma conta gratuita</h2>
+          <p class="auth-card__signup-text">
+            Crie um perfil da sua empresa e descubra as oportunidades de financiamento que se enquadram no seu perfil.
+          </p>
+          <a class="btn btn--info" href="registo.html">
+            Criar conta
+            <img src="assets/images/icon-arrow-right.svg" width="20" height="20" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

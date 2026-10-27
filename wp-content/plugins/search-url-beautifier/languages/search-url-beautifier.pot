@@ -1,0 +1,99 @@
+# Copyright (C) 2026 Search URL Beautifier
+# This file is distributed under the same license as the Search URL Beautifier package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Search URL Beautifier 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 12:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2026-01-18 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Domain: search-url-beautifier\n"
+
+
+
+#: search-url-beautifier.php:28
+#. Settings link
+msgid "Settings"
+msgstr ""
+
+#: search-url-beautifier.php:42
+#. Documentation
+msgid "Introduction to Plugin"
+msgstr ""
+
+#: search-url-beautifier.php:43
+#. Documentation
+msgid "Online Documentation"
+msgstr ""
+
+#: search-url-beautifier.php:44
+#. Rate and Review
+msgid "Rate and Review on WordPress.org"
+msgstr ""
+
+#: search-url-beautifier.php:45
+#. Pro version
+msgid "Upgrade to Pro for WooCommerce URL Beautification"
+msgstr ""
+
+#: search-url-beautifier.php:135
+#. Settings section title
+msgid "Search URL Beautifier"
+msgstr ""
+
+#: search-url-beautifier.php:137
+#. Settings section description
+msgid "Configure custom search URL slugs, titles, and meta descriptions for posts and pages."
+msgstr ""
+
+#: search-url-beautifier.php:145
+#. Field label for Post/Page slug
+msgid "Post/Page Search URL Slug"
+msgstr ""
+
+#: search-url-beautifier.php:149
+#. Clarification of slug
+msgid "What type of posts do you have? You can type article or post or posts or stories or editorial or something else, even non-English words in Unicode (প্রবন্ধ, شرط, 文章, סָעִיף, लेख, 記事 etc.) replacing the word articles. Output should be like this - www.example.com/articles/search-term"
+msgstr ""
+
+#: search-url-beautifier.php:157
+#. Search Page Title
+msgid "Post/Page Search Title"
+msgstr ""
+
+#: search-url-beautifier.php:161
+#. Field label for Post/Page slug
+msgid "If someone search for Paris city, and if your website title is XYZ, then output should be - "Paris city articles on XYZ". You can even change language, just keep the structure intact and use Unicode."
+msgstr ""
+
+#: search-url-beautifier.php:169
+#. Post/Page meta description
+msgid "Post/Page Meta Description"
+msgstr ""
+
+#: search-url-beautifier.php:173
+#. Field label for Post/Page meta description
+msgid "For this settings, output should be like this - "Explore all articles about Paris city on XYZ Magazine". You can even change language, just keep the structure intact and use Unicode."
+msgstr ""
+
+#: search-url-beautifier.php:182
+#. Field label for reset button
+msgid "Reset Settings"
+msgstr ""
+
+#: search-url-beautifier.php:184
+#. Field label for Reset button text
+msgid "Reset to default values of Search URL Beautifier"
+msgstr ""
+
+#: search-url-beautifier.php:310
+#. Field label for Reset notifications
+msgid "Search URL Beautifier Settings reset to defaults."
+msgstr ""

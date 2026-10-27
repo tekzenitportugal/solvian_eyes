@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solvian Eyes — Criar conta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="registo-page dark-page">
+    <a href="index.html" aria-label="Solvian Eyes — Início">
+      <img
+        class="dark-page__logo"
+        src="assets/images/footer-logo.png"
+        width="158"
+        height="50"
+        alt="Solvian Technology"
+      />
+    </a>
+
+    <main class="surface-card surface-card--form registo-page__card">
+      <div class="registo-page__intro">
+        <h1 class="registo-page__title">Criar conta gratuita</h1>
+        <p class="registo-page__subtitle">Encontre hoje as melhores oportunidades para a sua empresa!</p>
+      </div>
+
+      <form class="registo-page__form" action="#" method="post">
+        <section class="registo-page__section" aria-labelledby="registo-access-title">
+          <h2 class="form-section-title" id="registo-access-title">Dados de acesso</h2>
+
+          <div class="form-field">
+            <label class="form-field__label" for="nome">Nome completo*</label>
+            <input
+              class="form-field__control"
+              id="nome"
+              name="nome"
+              type="text"
+              placeholder="Seu nome completo"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-field__label" for="email">Email*</label>
+              <input
+                class="form-field__control"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="user@email.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="telemovel">Telemóvel*</label>
+              <input
+                class="form-field__control"
+                id="telemovel"
+                name="telemovel"
+                type="tel"
+                placeholder="+351 912 345 678"
+                autocomplete="tel"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-field__label" for="password">Password*</label>
+              <div class="form-field__control-wrap">
+                <input
+                  class="form-field__control"
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                  autocomplete="new-password"
+                  required
+                />
+                <button type="button" class="password-toggle" aria-label="Mostrar password"></button>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="password-repeat">Repetir password*</label>
+              <div class="form-field__control-wrap">
+                <input
+                  class="form-field__control"
+                  id="password-repeat"
+                  name="password_repeat"
+                  type="password"
+                  placeholder="Repetir Password"
+                  autocomplete="new-password"
+                  required
+                />
+                <button type="button" class="password-toggle" aria-label="Mostrar password"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="registo-page__section" aria-labelledby="registo-company-title">
+          <h2 class="form-section-title" id="registo-company-title">Perfil de empresa</h2>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-field__label" for="empresa">Nome da empresa*</label>
+              <input
+                class="form-field__control"
+                id="empresa"
+                name="empresa"
+                type="text"
+                placeholder="Nome de empresa"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="nif">NIF*</label>
+              <input
+                class="form-field__control"
+                id="nif"
+                name="nif"
+                type="text"
+                placeholder="NIF da empresa"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-field__label" for="cae">CAE principal*</label>
+              <select class="form-field__control" id="cae" name="cae" required>
+                <option value="" disabled selected>Seleccione Atividade</option>
+                <option value="1111">1111 - Cerealicultura (excepto arroz)</option>
+                <option value="1112">1112 - Cultura de leguminosas secas</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="ano">Ano de constituição*</label>
+              <input
+                class="form-field__control"
+                id="ano"
+                name="ano"
+                type="text"
+                placeholder="Ano de início"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="website">Website</label>
+            <input
+              class="form-field__control"
+              id="website"
+              name="website"
+              type="url"
+              placeholder="Website"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="endereco">Endereço*</label>
+            <input
+              class="form-field__control"
+              id="endereco"
+              name="endereco"
+              type="text"
+              placeholder="Morada fiscal"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-field__label" for="codigo-postal">Código-postal*</label>
+              <input
+                class="form-field__control"
+                id="codigo-postal"
+                name="codigo_postal"
+                type="text"
+                placeholder="Código-postal"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="localidade">Localidade*</label>
+              <select class="form-field__control" id="localidade" name="localidade" required>
+                <option value="" disabled selected>Seleccione localidade</option>
+                <option value="porto">Porto</option>
+                <option value="lisboa">Lisboa</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-field__label" for="nuts2">NUTS II</label>
+              <input class="form-field__control" id="nuts2" name="nuts2" type="text" placeholder="NUTS II" disabled />
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="nuts3">NUTS III</label>
+              <input class="form-field__control" id="nuts3" name="nuts3" type="text" placeholder="NUTS III" disabled />
+            </div>
+          </div>
+
+          <div class="registo-page__footer-fields">
+            <p class="form-note">*Campos obrigatórios</p>
+            <label class="form-check">
+              <input type="checkbox" name="termos" required />
+              <span class="form-check__box" aria-hidden="true"></span>
+              <span>
+                Li e aceito os
+                <a href="legal.html#termos">termos e condições</a> e
+                <a href="legal.html#privacidade">política de privacidade</a>.*
+              </span>
+            </label>
+            <label class="form-check">
+              <input type="checkbox" name="newsletter" />
+              <span class="form-check__box" aria-hidden="true"></span>
+              <span>Subscrever a newsletter com novidades e promoções.</span>
+            </label>
+          </div>
+        </section>
+
+        <button type="submit" class="btn btn--primary registo-page__submit">Começar a usar</button>
+      </form>
+
+      <p class="registo-page__login-link">
+        Já tem conta? <a href="login.html">Entrar</a>
+      </p>
+    </main>
+
+    <p class="dark-page__footer">©2025 Solvian. All Rights Reserved.</p>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
